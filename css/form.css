@@ -1,0 +1,22 @@
+/*Centered Form*/
+body{
+    background-image: url('https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-0/p280x280/75439411_1280142698812897_7400500853150318592_n.png?_nc_cat=100&_nc_eui2=AeEFkGycQlJSPb8wxyjul5YNsQd6JIPeqhidnrLrQWu_rpgTn8J1KPrcJc1oLER9X9TQ8DB7B7hEzRun-V4699C2QDHKpDLx_-KOLE-5k6pa_g&_nc_oc=AQlw3XOory2lZ2Ltd2vrYUujIRJ2Aa2b-NDkEVxGKoFzXYeQ4Rul3sg_Nw2EjWW6IC0&_nc_ht=scontent.fcrk3-1.fna&oh=ecee239bbfd41e3f4f6ef37fef40b836&oe=5ED231D7');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 30%;
+    background-color: rgb(250, 208, 215);
+    background-position-y: -10px;
+    text-align: left;
+}
+#visual{
+    background-color: rgba(255, 128, 255, 0.637);
+    border-radius:30px;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-family: cursive;
+    font-size: 90%;
+}
+label{
+    font-weight: bold;
+}
