@@ -1,11 +1,11 @@
 function validating(){ 
     
-	var event = document.forms["ValidationForm"]["Event"];			 
-	var title = document.forms["ValidationForm"]["Title"]; 
-	var dateFrom = document.forms["ValidationForm"]["dateFrom"]; 
-	var dateTo = document.forms["ValidationForm"]["dateTo"]; 
-	var datePost = document.forms["ValidationForm"]["datePost"]; 
-	var save = document.forms["ValidationForm"]["save"]; 
+	var event = document.forms["FormValidation"]["Event"];			 
+	var title = document.forms["FormValidation"]["Title"]; 
+	var dateFrom = document.forms["FormValidation"]["dateFrom"]; 
+	var dateTo = document.forms["FormValidation"]["dateTo"]; 
+	var datePost = document.forms["FormValidation"]["datePost"]; 
+	var save = document.forms["FormValidation"]["save"]; 
 
 	if (event.value == ""){ 
 		alert("Please choose the kind of your Event."); 
@@ -20,21 +20,22 @@ function validating(){
 	} 
 	
 	if (dateFrom.value == ""){ 
-		alert("Please enter the date when will be the start of your Event."); 
+		alert("Please enter a proper date on when will be the start of your Event."); 
 		dateFrom.focus(); 
 		return false; 
 	} 
 
 	if (dateTo.value == ""){ 
-		alert("Please enter the date it will end."); 
+		alert("Please enter a proper date it will end."); 
 		dateTo.focus(); 
 		return false; 
 	} 
 	if(dateFrom.value > dateTo.value){
-		alert("Invalid start of date.");
+		alert("Invalid event dates.");
 		dateFrom.focus();
 		return false;
 	}
+	
 	if(datePost.value<dateFrom.value){
 		alert("Invalid posting date.");
 		datePost.focus();

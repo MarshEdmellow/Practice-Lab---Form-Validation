@@ -6,9 +6,9 @@ body{
     background-size: 30%;
     background-color: rgb(250, 208, 215);
     background-position-y: -10px;
-    text-align: left;
+
 }
-#visual{
+#inside{
     background-color: rgba(255, 128, 255, 0.637);
     border-radius:30px;
     padding-left:50px;
@@ -16,7 +16,4 @@ body{
     padding-bottom: 10px;
     font-family: cursive;
     font-size: 90%;
-}
-label{
-    font-weight: bold;
 }

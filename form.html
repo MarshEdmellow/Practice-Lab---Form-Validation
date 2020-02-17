@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/form.css">
     <script src="js/form.js"></script>
-
     <title>Form Validation</title>
 </head>
-<body style="margin-left: 25%;margin-right:25%;width: 50%;margin-top: 17%;">
-    <div id="visual">
-    <form name="ValidationForm" onsubmit="return false">
-        <h1 style="text-align: center;">CREATE A NEW EVENT</h1><br/>
-        <label> Create Event:</label> 
-        <select name="Event" style="margin-left: 90px;" >
-            <option value="">Choose one</option>
-            <option >Birthday Party</option>
-            <option>Valentines Date</option>
-            <option>Wedding Celebration</option>
-            <option>Surprise Party</option>
-        </select><br/><br/>      
-        <label> Title: <input type="text" name="Title" style="margin-left: 147px;" size="60" placeholder="Enter your title." onfocus="this.placeholder =''"
-            onblur="this.placeholder = 'Enter your title.'" ></label><br/><br/>
-        <label>Event Dates: <input type="date" name="dateFrom" style="margin-left: 94px;" ></label><label> to</label> <input type="date" name="dateTo" ><br/><br/>  
-        <label>Posting Date: <input type="date" name="datePost" style="margin-left: 92px;"><br/><br/>
-        
-            <input type="checkbox" >
-            <label>Is Registration required?</label><br/><br/>
-            <input type="checkbox" >
-            <label>Is this event associated with any Family Programs?</label><br/><br/>
-            <input type="checkbox" >
-            <label>Upon Registration Completion, Are Users to Receive and Auto Generated Email?</label><br/><br/>
-            <input type="checkbox" >
-            <label>Is There a Point of Contact?</label><br/><br/>
-            <input type="checkbox" >
-            <label>Is There a Hosting Command Point of Contact?</label><br/><br/>
-            <button name="save" onclick="Save()"  style="margin-left: 45%;margin-right: 10px;">Save</button> <input type="reset" value="Cancel"> 
-        
-    </form></div>
- 
+<body>
+<div id="design" style="margin-left: 25%;margin-right: 25%; margin-top: 15%;">
+    <fieldset class="margin" id="inside">
+        <legend><h1>Create a new Event </h1></legend>
+        <form name="FormValidation" style="margin-top: 1%; margin-left: 10%;" onsubmit="return false">
+         
+            <label>Event Type:</label>
+            <select style="margin-left: 9.5%" id="Event">
+                <option>Choose one</option>
+                <option>Birthday Party</option>
+                <option>Wedding Celebration</option>
+                <option>Anniversary</option>
+            </select><br/><br/>
+
+            <label>Event Title:</label>
+            <input id="Title" type="text" size= 60; style="margin-left: 10%"><br/><br/>
+
+            <label>Event Dates:</label>
+            <input id="dateFrom" type="date" style="margin-left: 9%"><label> to </label> <input id="dateTo" type="date"><br/><br/>
+
+            <label>Posting Date:</label> <input id="datePost" type="date" style="margin-left: 8.5%"><br/><br/>
+
+            <input type="checkbox" id="cbox"><label>Is registration required?</label><br/>
+            <input type="checkbox" id="cbox"><label>Is this event associated cith any family programs?</label><br/>
+            <input type="checkbox" id="cbox"><label>Upon Registration completion, are users to receive an auto generated email?</label><br/>
+            <input type="checkbox" id="cbox"><label>Is there a point of contact?</label><br/>
+            <input type="checkbox" id="cbox"><label>Is there a hosting command point of contact?</label><br/><br/>
+
+            <button id="save" type="button" style="margin-left: 35%;" onclick="Save()">Save</button> <button type="reset" style="margin-left: 3%;">Cancel</button>
+        </form>
+    </fieldset>
+</div>
 </body>
 </html>
